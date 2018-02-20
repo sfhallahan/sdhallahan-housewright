@@ -1,111 +1,124 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>S. D. Hallahan Housewright</title>
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-    <link href="/css/main.css" rel="stylesheet" type="text/css" />
-    <script src="/js/main.js" type="text/javascript"></script>
-  </head>
-  <body>
-    <header>
 
-      <div class="title-container">
-        <h1 class="title">S. D. Hallahan</h1>
-        <p class="subtitle">Housewright</p>
+<head>
+  <title>S. D. Hallahan Housewright</title>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <link href="/css/main.css" rel="stylesheet" type="text/css" />
+  <script src="/js/main.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <header>
+
+    <div class="title-container">
+      <h1 class="title">S. D. Hallahan</h1>
+      <p class="subtitle">Housewright</p>
+    </div>
+    <nav>
+      <button class="nav__button">
+        <img class="nav__icon" src="/img/hamburger.svg" />
+      </button>
+      <ul class="nav__container nav__container--closed">
+        <a href="/" class="nav__item nav__item--active">
+          <li>Home</li>
+        </a>
+        <a href="/our-work" class="nav__item">
+          <li>Our Work</li>
+        </a>
+        <a href="/about-us" class="nav__item">
+          <li>About Us</li>
+        </a>
+        <a href="/contact" class="nav__item">
+          <li>Contact Us</li>
+        </a>
+      </ul>
+    </nav>
+    <div class="header__background"></div>
+  </header>
+  <main>
+    <section class="carousel">
+      <div class="carousel__container carousel__container--active">
+        <img class="carousel__img" src="/img/sunset-home.jpg" />
       </div>
-      <nav>
-        <button class="nav__button">
-          <img class="nav__icon" src="/img/hamburger.svg" />
-        </button>
-        <ul class="nav__container nav__container--closed">
-          <a href="/" class="nav__item nav__item--active"><li>Home</li></a>
-          <a href="/our-work" class="nav__item"><li>Our Work</li></a>
-          <a href="/about-us" class="nav__item"><li >About Us</li></a>
-          <a href="/contact" class="nav__item"><li>Contact Us</li></a>
-        </ul>
-      </nav>
-      <div class="header__background"></div>
-    </header>
-    <main>
-      <section class="carosel">
-        <div class="carosel__container carosel__container--active">
-          <img class="carosel__img" src="/img/sunset-home.jpg" />
-        </div>
-        <div class="carosel__container">
-          <img class="carosel__img" src="/img/fenwick-house-pool.jpg" />
-        </div>
-        <div class="carosel__container">
-          <img class="carosel__img" src="/img/old-saybrook-master-suite.jpg" />
-        </div>
-      </section>
-      <section class="section section__services">
-        <div class="service">
-          <div class="service__titlecontainer">
-            <img class="service__icon" src="/img/home.svg"  />
-            <h3 class="service-title">RESIDENTIAL CONSTRUCTION</h3>
-          </div>
-          <p class="service-text">
-            Custom Home Building, Apartment/Condo/Co-op Renovations, Design/Build, Remodeling, Additions, Kitchen & Bathrooms.
-          </p>
-        </div>
-        <div class="service">
-          <div class="service__titlecontainer">
-            <img class="service__icon" src="/img/building.svg"  />
-            <h3 class="service-title">COMMERCIAL CONSTRUCTION</h3>
-          </div>
-          <p class="service-text">
-            Interior/Exterior Renovations, National Franchises, Retail Stores, Office Build Outs, New Construction and Industrial Buildings.
-          </p>
-        </div>
-        <div class="service">
-          <div class="service__titlecontainer">
-            <img class="service__icon" src="/img/clipboard.svg"  />
-            <h3 class="service-title">CONSTRUCTION MANAGEMENT</h3>
-          </div>
-          <p class="service-text">
-            A principle member of our company is involved in the construction management process from inception to completion.
-          </p>
-        </div>
-        <div class="service">
-          <div class="service__titlecontainer">
-            <img class="service__icon" src="/img/truck.svg"  />
-            <h3 class="service-title">FIRE/FLOOD RESTORATION</h3>
-          </div>
-          <p class="service-text">
-            Demolition, Cleanup, Fire and Mold Remediation, Residential / Commercial / Retail.
-          </p>
-        </div>
-      </section>
-      <div class="homepage-other-container">
-        <section class="section section__who-we-are">
-          <h2 class="who-we-are-text">S.D. Hallahan Housewright is a General Contractor in the Southeast Connecticut Shoreline</h2>
-          <div class="divider__line">
-          </div>
-        </section>
-        <section class="section recent-work-container">
-          <div class="centered-container">
-            <h3 class="small-section-header">S.D. Hallahan Housewright Recent Work</h3>
-            <div class="gallery-container">
-              <img class="thumbnail" src="/img/garage-thumbnail.jpg" />
-              <img class="thumbnail" src="/img/garage-thumbnail.jpg" />
-              <img class="thumbnail" src="/img/garage-thumbnail.jpg" />
-              <img class="thumbnail" src="/img/garage-thumbnail.jpg" />
-              <img class="thumbnail" src="/img/garage-thumbnail.jpg" />
-            </div>
-          </div>
-          <a class="full-gallery-link" href="#">View full work gallery</a>
-        </section>
-        <section class="section">
-          <h3 class="small-section-header">Why S.D Hallahan Housewright</h2>
-          <p>
-            S.D. Hallahan Housewright has been in business for over 30 years. We have extensive experience in both residential and commercial construction. We take pride in our attention to detail and high level of customer service. Our goal is to make the building process as seamless and stress free as possible for our clients.
-          </p>
-        </section>
+      <div class="carousel__container">
+        <img class="carousel__img" src="/img/fenwick-house-pool.jpg" />
       </div>
-    </main>
-    <footer>
-      <p class="footer__text">
-        Copyright (c) 2018 S.D. Hallahan Housewright inc, All Rights Reserved.
-      </p>
-    </footer>
-  </body>
+      <div class="carousel__container">
+        <img class="carousel__img" src="/img/old-saybrook-master-suite.jpg" />
+      </div>
+    </section>
+    <section class="section section__services">
+      <div class="service">
+        <div class="service__titlecontainer">
+          <img class="service__icon" src="/img/home.svg" />
+          <h3 class="service-title">RESIDENTIAL CONSTRUCTION</h3>
+        </div>
+        <p class="service-text">
+          Custom Home Building, Apartment/Condo/Co-op Renovations, Design/Build, Remodeling, Additions, Kitchen & Bathrooms.
+        </p>
+      </div>
+      <div class="service">
+        <div class="service__titlecontainer">
+          <img class="service__icon" src="/img/building.svg" />
+          <h3 class="service-title">COMMERCIAL CONSTRUCTION</h3>
+        </div>
+        <p class="service-text">
+          Interior/Exterior Renovations, National Franchises, Retail Stores, Office Build Outs, New Construction and Industrial Buildings.
+        </p>
+      </div>
+      <div class="service">
+        <div class="service__titlecontainer">
+          <img class="service__icon" src="/img/clipboard.svg" />
+          <h3 class="service-title">CONSTRUCTION MANAGEMENT</h3>
+        </div>
+        <p class="service-text">
+          A principle member of our company is involved in the construction management process from inception to completion.
+        </p>
+      </div>
+      <div class="service">
+        <div class="service__titlecontainer">
+          <img class="service__icon" src="/img/truck.svg" />
+          <h3 class="service-title">FIRE/FLOOD RESTORATION</h3>
+        </div>
+        <p class="service-text">
+          Demolition, Cleanup, Fire and Mold Remediation, Residential / Commercial / Retail.
+        </p>
+      </div>
+    </section>
+    <section class="section homepage-other-container">
+      <div class="section__who-we-are">
+        <h2 class="section__header--large">S.D. Hallahan Housewright is a General Contractor in the Southeast Connecticut Shoreline</h2>
+        <div class="divider__line"></div>
+      </div>
+      <div class="recent-work-container">
+        <div class="centered-container">
+          <h3 class="small-section-header">S.D. Hallahan Housewright Recent Work</h3>
+          <div class="gallery-container">
+            <img class="thumbnail" src="/img/garage-thumbnail.jpg" />
+            <img class="thumbnail" src="/img/garage-thumbnail.jpg" />
+            <img class="thumbnail" src="/img/garage-thumbnail.jpg" />
+            <img class="thumbnail" src="/img/garage-thumbnail.jpg" />
+            <img class="thumbnail" src="/img/garage-thumbnail.jpg" />
+          </div>
+        </div>
+        <a class="full-gallery-link" href="#">View full work gallery</a>
+      </div>
+      <div class="why-us__container">
+        <h3 class="small-section-header">Why S.D Hallahan Housewright</h3>
+        <p>
+          S.D. Hallahan Housewright has been in business for over 30 years. We have extensive experience in both residential and commercial
+          construction. We take pride in our attention to detail and high level of customer service. Our goal is to make
+          the building process as seamless and stress free as possible for our clients.
+        </p>
+    </section>
+    </section>
+  </main>
+  <footer>
+    <p class="footer__text">
+      Copyright (c) 2018 S.D. Hallahan Housewright inc, All Rights Reserved.
+    </p>
+  </footer>
+</body>
+
 </html>
