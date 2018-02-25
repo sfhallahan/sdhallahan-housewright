@@ -322,6 +322,8 @@ main {
 	margin: 0;
 }
 
+
+
 .contact__option {
 	display: flex;
 	justify-content: flex-start;
@@ -419,8 +421,16 @@ main {
 		margin-right: 0;
 	}
 
-  .contact__container,
-  .map__container,
+	.contact__container {
+		width: auto;
+		flex: 1;
+	}  
+	
+	.map__container {
+		width: auto;
+		flex: 2;
+	}
+  	
 	.team-member__container,
 	.section__about-carousel,
 	.section__about-text {
@@ -434,9 +444,14 @@ main {
 		margin-right: 0;
 	}
 
+	
 	.why-us__container,
 	.recent-work-container {
 		width: calc(50% - 2rem);
 		padding: 2rem 1rem;
+	}
+
+	.team-member__container {
+		width: calc(25% - 2rem);
 	}
 }
