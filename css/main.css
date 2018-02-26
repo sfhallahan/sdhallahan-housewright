@@ -7,7 +7,7 @@ body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	font-family: "Josefin Sans", sans-serif;
+	font-family: "Scope One", sans-serif;
 	color: rgba(0, 0, 0, 0.84);
 }
 
@@ -15,11 +15,12 @@ h1,
 h2,
 h3 {
 	margin: 0;
+	color: #0c1f38;
 }
 
 p {
 	font-size: 1rem;
-	line-height: 1.2rem;
+	line-height: 1.4rem;
 	color: rgba(0, 0, 0, 0.67);
 }
 
@@ -61,8 +62,8 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-  z-index: 2;
-  background: #fff;
+	z-index: 2;
+	background: #fff;
 }
 
 .flex__container {
@@ -83,10 +84,17 @@ header {
 footer {
 	width: 100%;
 	height: 6rem;
-	background-image: url("/img/woodPaneling.jpg");
+	background: #0c1f38;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+
+.footer__text {
+	font-size: 1rem;
+	color: #979797;
+	text-align: center;
 }
 
 .centered-container {
@@ -97,7 +105,7 @@ footer {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	margin: 0.75rem;
+	margin: 0.75rem 1.5rem;
 }
 
 .title {
@@ -109,18 +117,18 @@ footer {
 .subtitle {
 	font-size: 1.125rem;
 	margin: 0;
-	padding: 0;
+	padding: 0;	
 }
 
 .nav__item {
-	color: rgba(0, 0, 0, 0.67);
+	color:#0c1f38;
 	font-weight: 300;
 }
 
 .nav__item--active {
-	color: rgba(0, 0, 0, 0.87);
+	color:  #ffa60a;
 	font-weight: bold;
-	border-bottom: solid 2px rgba(0, 0, 0, 0.87);
+	border-bottom: solid 2px  #ffa60a;
 }
 
 main {
@@ -150,7 +158,7 @@ main {
 
 .carousel__img {
 	width: 100%;
-	max-height: 450px;
+	max-height: 475px;
 	object-fit: cover;
 	z-index: -1;
 }
@@ -158,7 +166,7 @@ main {
 .section {
 	width: 100%;
 	margin: 0 1.5rem;
-  padding: 2rem 0 0 0;
+  	padding: 2rem 0 0 0;
 }
 
 .section__subheader {
@@ -172,10 +180,11 @@ main {
 .section__services {
 	display: flex;
 	flex-wrap: wrap;
+	padding: 2rem;
 }
 
 .service {
-	margin: 0 1rem 1rem 1rem;
+	margin: 0 2rem 1rem 2rem;
 }
 
 .service__titlecontainer {
@@ -190,7 +199,7 @@ main {
 	width: 1.25rem;
 	height: 1.25rem;
 	padding: 0 0.5rem 0 0;
-	color: rgba(0, 0, 0, 0.84);
+	color: #ffa60a;
 }
 
 .service-title {
@@ -229,7 +238,7 @@ main {
 .divider__line {
 	height: 1px;
 	width: 100px;
-	border-bottom: solid 1px rgba(0, 0, 0, 0.25);
+	border-bottom: solid 2px  #ffa60a;;
 	margin: 1rem 0;
 }
 
@@ -266,24 +275,27 @@ main {
 	padding-top: 2rem;
 }
 
-.footer__text {
-	font-size: 1rem;
-	color: rgba(0, 0, 0, 0.45);
-	text-align: center;
-}
 
 .section__about-container {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.contact__container,
-.map__container,
 .team-member__container,
 .section__about-carousel,
 .section__about-text {
 	width: 100%;
 	padding: 0 0.5rem 1rem 0.5rem;
+}
+
+.section__about-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.text__container {
+	width: 100%;
+	margin-bottom: 0.75rem;
 }
 
 .meet-the-team__container {
@@ -315,31 +327,50 @@ main {
 	margin: 0;
 }
 
-.divider__line--team-member {
-	height: 1px;
+.divider__line--small {
+	height: 2px;
 	width: 50px;
-	border-bottom: solid 1px rgba(0, 0, 0, 0.25);
+	border-bottom: solid 2px #ffa60a;
 	margin: 0;
 }
 
+.page__contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 107px;
+}
 
+.contact__container {
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	justify-content: center;
+	padding: 1rem 1.5rem 3rem 1.5rem;
+
+}
 
 .contact__option {
 	display: flex;
-	justify-content: flex-start;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 2rem;
 }
 
 .contact__icon {
-	width: 1.5rem;
-	height: 1.5rem;
-	padding: 0 1rem 0 0;
-	margin-top: 1rem;
+	width: 2rem;
+	height: 2rem;
+	padding: 1rem;
 	fill: #ffa60a;
+}
+
+.map__container {
+	width:100%;
 }
 
 .map {
   min-width:300px;
-  min-height:300px;
+  min-height:400px;
   width: 100%;
   height: 100%;
 }
@@ -365,8 +396,8 @@ main {
 		right: 0;
 		background: #fff;
 		transition: top 0.25s ease, visibility 1s;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-    transform: translateZ(0);
+		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+		transform: translateZ(0);
 		z-index: -2;
 	}
 
@@ -416,19 +447,13 @@ main {
 		margin: 0 1rem;
 	}
 
+	.nav__item:hover {
+		color: #ffa60a;
+	}
+
 	.service {
 		width: calc(50% - 2rem);
 		margin-right: 0;
-	}
-
-	.contact__container {
-		width: auto;
-		flex: 1;
-	}  
-	
-	.map__container {
-		width: auto;
-		flex: 2;
 	}
   	
 	.team-member__container,
@@ -440,7 +465,7 @@ main {
 
 @media screen and (min-width: 1000px) {
 	.service {
-		width: calc(25% - 1rem);
+		width: calc(25% - 2rem);
 		margin-right: 0;
 	}
 
