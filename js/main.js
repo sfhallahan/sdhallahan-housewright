@@ -1,13 +1,15 @@
 let navOpen = false;
 
 function toggleNavigation() {
-  const navContainer = document.querySelector('.nav__container');
+  console.log(this);
+  const nav = document.querySelector('nav');
+  const backgroundOverlay = document.querySelector('.nav__background-overlay');
   if (navOpen) {
-    navContainer.classList.remove('nav__container--open');
-    navContainer.classList.add('nav__container--closed');
+    nav.classList.remove('nav--open');
+    backgroundOverlay.classList.remove('nav__background-overlay--active');
   } else {
-    navContainer.classList.remove('nav__container--closed');
-    navContainer.classList.add('nav__container--open');
+    nav.classList.add('nav--open');
+    backgroundOverlay.classList.add('nav__background-overlay--active');
   }
   return (navOpen = !navOpen);
 }
@@ -30,8 +32,10 @@ function startcarousel() {
 
 window.addEventListener('DOMContentLoaded', () => {
   const navButton = document.querySelector('.nav__button');
+  const backgroundOverlay = document.querySelector('.nav__background-overlay');
 
   navButton.addEventListener('click', toggleNavigation);
+  backgroundOverlay.addEventListener('click', toggleNavigation);
 });
 
 window.addEventListener('load', startcarousel);
