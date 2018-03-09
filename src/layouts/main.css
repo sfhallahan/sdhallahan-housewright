@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Scope+One");
+
 :root {
 	--color-primary: #0c1f38;
 	--color-secondary: #ffa60a;
@@ -188,8 +190,7 @@ main {
 
 .section {
 	width: 100%;
-	margin: 0 1.5rem;
-  	padding: 2rem 0 0 0;
+  	padding: 2rem 1.5rem 0 ;
 }
 
 .section__subheader {
